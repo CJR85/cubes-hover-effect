@@ -16,6 +16,16 @@ body {
   position: relative;
   top: -80px;
   transform: skewY(-20deg);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 
 .container .cube {
